@@ -1,130 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+/* styles.css */
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of a Salesforce Architect and Developer. Discover expertise in Salesforce development, integrations, and custom solutions." />
-  <title>Salesforce Architect Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .navbar a {
-      color: white;
-      transition: color 0.3s;
-    }
-    .navbar a:hover {
-      color: #ffd700;
-    }
-    .section {
-      padding: 100px 0;
-    }
-    .hero {
-      height: 100vh;
-      background: linear-gradient(to right, #0d6efd, #0a58ca);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-    }
-  </style>
-</head>
+:root {
+  --primary-color: #0d6efd;
+  --bg-light: #f8f9fa;
+  --text-color: #212529;
+  --header-bg: var(--primary-color);
+  --header-text: #fff;
+}
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">SF Architect</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  <header class="hero" id="home">
-    <div class="container">
-      <h1 class="display-4">Hi, I'm a Salesforce Application Architect</h1>
-      <p class="lead">Designing scalable solutions, streamlining workflows, and building custom Salesforce apps</p>
-      <a href="#about" class="btn btn-light mt-4">Learn More</a>
-    </div>
-  </header>
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
 
-  <section id="about" class="section bg-light">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a certified Salesforce Application Architect and Developer with experience in designing and implementing end-to-end Salesforce solutions, integrating 3rd-party systems, and delivering high-performance custom applications across Sales Cloud, Service Cloud, Experience Cloud, and Marketing Cloud.</p>
-    </div>
-  </section>
+header {
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: 2rem 0;
+  text-align: center;
+}
 
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Services</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h4><i class="fa fa-cogs"></i> Custom App Development</h4>
-          <p>Lightning Web Components, Aura, Apex triggers, custom pages, and more.</p>
-        </div>
-        <div class="col-md-4">
-          <h4><i class="fa fa-cloud"></i> Cloud Implementations</h4>
-          <p>Sales, Service, Experience, and Marketing Cloud setup and deployment.</p>
-        </div>
-        <div class="col-md-4">
-          <h4><i class="fa fa-link"></i> Integrations</h4>
-          <p>REST/SOAP API integrations, middleware setups, and third-party sync.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+section {
+  padding: 4rem 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  <section id="projects" class="section bg-light">
-    <div class="container">
-      <h2>Featured Projects</h2>
-      <ul>
-        <li>Insurance Quoting Engine using LWC and Apex</li>
-        <li>Healthcare Case Routing with Omnichannel</li>
-        <li>Partner Community for B2B Collaboration</li>
-      </ul>
-    </div>
-  </section>
+.bg-light {
+  background-color: var(--bg-light);
+}
 
-  <section id="testimonials" class="section">
-    <div class="container">
-      <h2>Testimonials</h2>
-      <blockquote class="blockquote">
-        <p>“Outstanding expertise in Salesforce. Delivered our project ahead of time with excellent communication.”</p>
-        <footer class="blockquote-footer">Tech Lead, FinTech Co.</footer>
-      </blockquote>
-    </div>
-  </section>
+body.dark-mode .bg-light {
+  background-color: #1f1f1f;
+}
 
-  <section id="contact" class="section bg-light">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>If you're looking for a reliable Salesforce developer and architect for your next project, feel free to reach out.</p>
-      <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-      <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
-    </div>
-  </section>
+.service-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
 
-  <footer class="bg-primary text-white text-center py-3">
-    <p>&copy; 2025 Salesforce Architect Portfolio. All rights reserved.</p>
-  </footer>
-</body>
+footer {
+  background: var(--bg-light);
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-</html>
+body.dark-mode footer {
+  background: #1f1f1f;
+}
+
+/* Button toggle */
+#darkToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#darkToggle:hover {
+  background: #084298;
+}
+
+/* Scroll fade-in helper */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Testimonials carousel adjustments */
+.carousel-item blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.carousel-item footer {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Form validation */
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid {
+  border-color: #198754;
+}
