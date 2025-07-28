@@ -3,63 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deepak| Salesforce Developer & Architect</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <meta name="description" content="Portfolio of Deepak Reddy - Salesforce Application Architect and Developer offering custom Salesforce solutions and freelance services." />
+  <title>Salesforce Architect Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 text-gray-800 scroll-smooth">
-
-  <!-- Hero Section -->
-  <header class="hero text-white text-center py-24">
-    <div class="container mx-auto relative z-10">
-      <h1 class="text-5xl font-bold">Deepak Reddy</h1>
-      <p class="mt-4 text-xl">Senior Salesforce Developer & Certified Architect</p>
-      <a href="#contact" class="mt-6 inline-block bg-indigo-600 px-6 py-3 rounded text-white font-semibold hover:bg-indigo-700 transition">Let’s Work Together</a>
-    </div>
+<body>
+  <button id="darkToggle">Toggle Dark Mode</button>
+  <header>
+    <h1>Deepak Reddy - Salesforce Application Architect</h1>
+    <p>Custom Salesforce Solutions | Cloud Expertise | Freelance Architect</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 px-4 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
-    <p class="text-lg leading-relaxed text-center">I’m a Senior Salesforce Developer and Architect with over 7+ years of experience building scalable, high-performing Salesforce solutions across Sales, Service, and Experience Cloud. I'm certified in PD1, PD2 and specialize in Apex, LWC, and integrations.</p>
-  </section>
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I am a Salesforce Application Architect and Developer with extensive experience in building scalable and secure applications across Sales Cloud, Service Cloud, Experience Cloud, and custom Lightning applications. I hold multiple Salesforce certifications and have helped clients achieve their digital transformation goals.</p>
+      </div>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="bg-white py-16 px-4">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10">My Services</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">Custom Salesforce Development</h3>
-          <p>Build Apex classes, triggers, Visualforce pages, and Lightning components tailored to your business.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">Architecture & Design</h3>
-          <p>Design scalable and maintainable solutions with best practices in security, automation, and deployment.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">API & Integrations</h3>
-          <p>Connect Salesforce with external systems via REST, SOAP APIs for seamless data flow.</p>
+    <section id="services" class="bg-light">
+      <div class="container">
+        <h2>Services Offered</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li>Lightning Web Components & Aura Development</li>
+              <li>Apex Triggers, Batch Jobs, Schedulers</li>
+              <li>Sales & Service Cloud Implementations</li>
+              <li>REST/SOAP API Integrations</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>Experience Cloud Site Development</li>
+              <li>Automation using Flow, Process Builder</li>
+              <li>CI/CD with SFDX & GitHub</li>
+              <li>Security Review & Performance Optimization</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 px-4 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-6">Get in Touch</h2>
-    <form class="max-w-xl mx-auto grid gap-4">
-      <input type="text" placeholder="Your Name" class="border border-gray-300 p-3 rounded" required>
-      <input type="email" placeholder="Your Email" class="border border-gray-300 p-3 rounded" required>
-      <textarea rows="5" placeholder="Your Message" class="border border-gray-300 p-3 rounded" required></textarea>
-      <button type="submit" class="bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-700 transition">Send Message</button>
-    </form>
-  </section>
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <p>Below are a few examples of the Salesforce projects I’ve worked on:</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Salesforce CRM Migration</h5>
+                <p class="card-text">Migrated legacy CRM data to Salesforce, designed flows, and built LWC dashboards.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Experience Cloud Portal</h5>
+                <p class="card-text">Created a multilingual customer portal using Experience Builder and custom LWC.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">API Integration</h5>
+                <p class="card-text">Integrated Salesforce with external systems using Named Credentials and REST services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer class="text-center py-6 text-sm text-gray-600 bg-white">
-    © 2025 Deepak Reddy. All rights reserved.
+    <section id="contact" class="bg-light">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/deepaksfdc33" target="_blank" rel="noopener noreferrer">github.com/deepaksfdc33</a></p>
+        <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Deepak Reddy Madduri. All rights reserved.</p>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
