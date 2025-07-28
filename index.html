@@ -1,104 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Deepak Reddy - Salesforce Application Architect and Developer offering custom Salesforce solutions and freelance services." />
+  <meta name="description" content="Portfolio of a Salesforce Architect and Developer. Discover expertise in Salesforce development, integrations, and custom solutions." />
   <title>Salesforce Architect Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar a {
+      color: white;
+      transition: color 0.3s;
+    }
+    .navbar a:hover {
+      color: #ffd700;
+    }
+    .section {
+      padding: 100px 0;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #0d6efd, #0a58ca);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+  </style>
 </head>
+
 <body>
-  <button id="darkToggle">Toggle Dark Mode</button>
-  <header>
-    <h1>Deepak Reddy - Salesforce Application Architect</h1>
-    <p>Custom Salesforce Solutions | Cloud Expertise | Freelance Architect</p>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">SF Architect</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm a Salesforce Application Architect</h1>
+      <p class="lead">Designing scalable solutions, streamlining workflows, and building custom Salesforce apps</p>
+      <a href="#about" class="btn btn-light mt-4">Learn More</a>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>I am a Salesforce Application Architect and Developer with extensive experience in building scalable and secure applications across Sales Cloud, Service Cloud, Experience Cloud, and custom Lightning applications. I hold multiple Salesforce certifications and have helped clients achieve their digital transformation goals.</p>
-      </div>
-    </section>
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a certified Salesforce Application Architect and Developer with experience in designing and implementing end-to-end Salesforce solutions, integrating 3rd-party systems, and delivering high-performance custom applications across Sales Cloud, Service Cloud, Experience Cloud, and Marketing Cloud.</p>
+    </div>
+  </section>
 
-    <section id="services" class="bg-light">
-      <div class="container">
-        <h2>Services Offered</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <ul>
-              <li>Lightning Web Components & Aura Development</li>
-              <li>Apex Triggers, Batch Jobs, Schedulers</li>
-              <li>Sales & Service Cloud Implementations</li>
-              <li>REST/SOAP API Integrations</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul>
-              <li>Experience Cloud Site Development</li>
-              <li>Automation using Flow, Process Builder</li>
-              <li>CI/CD with SFDX & GitHub</li>
-              <li>Security Review & Performance Optimization</li>
-            </ul>
-          </div>
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h4><i class="fa fa-cogs"></i> Custom App Development</h4>
+          <p>Lightning Web Components, Aura, Apex triggers, custom pages, and more.</p>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fa fa-cloud"></i> Cloud Implementations</h4>
+          <p>Sales, Service, Experience, and Marketing Cloud setup and deployment.</p>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fa fa-link"></i> Integrations</h4>
+          <p>REST/SOAP API integrations, middleware setups, and third-party sync.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="portfolio">
-      <div class="container">
-        <h2>Portfolio</h2>
-        <p>Below are a few examples of the Salesforce projects I’ve worked on:</p>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Salesforce CRM Migration</h5>
-                <p class="card-text">Migrated legacy CRM data to Salesforce, designed flows, and built LWC dashboards.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Experience Cloud Portal</h5>
-                <p class="card-text">Created a multilingual customer portal using Experience Builder and custom LWC.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">API Integration</h5>
-                <p class="card-text">Integrated Salesforce with external systems using Named Credentials and REST services.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <ul>
+        <li>Insurance Quoting Engine using LWC and Apex</li>
+        <li>Healthcare Case Routing with Omnichannel</li>
+        <li>Partner Community for B2B Collaboration</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact" class="bg-light">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/deepaksfdc33" target="_blank" rel="noopener noreferrer">github.com/deepaksfdc33</a></p>
-        <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
-      </div>
-    </section>
-  </main>
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <blockquote class="blockquote">
+        <p>“Outstanding expertise in Salesforce. Delivered our project ahead of time with excellent communication.”</p>
+        <footer class="blockquote-footer">Tech Lead, FinTech Co.</footer>
+      </blockquote>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Deepak Reddy Madduri. All rights reserved.</p>
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you're looking for a reliable Salesforce developer and architect for your next project, feel free to reach out.</p>
+      <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white text-center py-3">
+    <p>&copy; 2025 Salesforce Architect Portfolio. All rights reserved.</p>
   </footer>
-
-  <script>
-    const toggle = document.getElementById('darkToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-  </script>
 </body>
+
 </html>
