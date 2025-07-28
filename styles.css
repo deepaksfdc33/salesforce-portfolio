@@ -74,3 +74,36 @@ body.dark-mode footer {
 #darkToggle:hover {
   background: #084298;
 }
+
+/* Scroll fade-in helper */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Testimonials carousel adjustments */
+.carousel-item blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.carousel-item footer {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Form validation */
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid {
+  border-color: #198754;
+}
